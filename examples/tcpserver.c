@@ -1,7 +1,7 @@
 # include <stdio.h>
 # include <stdlib.h>
 # include <unistd.h>
-# include "libinetsocket.h"
+# include "libsocket.h"
 
 /*
  * Accept one (1) connection from a transmission_client

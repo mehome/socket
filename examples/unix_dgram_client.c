@@ -2,7 +2,7 @@
 # include <stdio.h>
 # include <unistd.h>
 # include <stdlib.h>
-# include "libunixsocket.h"
+# include "libsocket.h"
 
 /*
  * This example is part of libsocket/libunixsocket

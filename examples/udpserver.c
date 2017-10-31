@@ -1,8 +1,8 @@
 # include <stdio.h>
 # include <stdlib.h>
-# include "libinetsocket.h"
 # include <unistd.h>
 # include <string.h>
+# include "libsocket.h"
 
 /*
  * This example is part of libsocket/libinetsocket

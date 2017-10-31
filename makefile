@@ -12,29 +12,29 @@ TARGETS+= unix_stream_client.exe unix_stream_server.exe
 targets: $(TARGETS)
 	@ls -lh $+
 
-tcpserver.exe: $(INET)
-	$(CC) $(CFLAG) $+ examples/tcpserver.c -o $@
+tcpserver.exe: $(INET) examples/tcpserver.c 
+	$(CC) $(CFLAG) $+ -o $@
 
-tcpclient.exe: $(INET)
-	$(CC) $(CFLAG) $+ examples/tcpclient.c -o $@
+tcpclient.exe: $(INET) examples/tcpclient.c
+	$(CC) $(CFLAG) $+ -o $@
 
-udpserver.exe: $(INET)
-	$(CC) $(CFLAG) $+ examples/udpserver.c -o $@
+udpserver.exe: $(INET) examples/udpserver.c
+	$(CC) $(CFLAG) $+ -o $@
 
-udpclient.exe: $(INET)
-	$(CC) $(CFLAG) $+ examples/udpclient.c -o $@
+udpclient.exe: $(INET) examples/udpclient.c
+	$(CC) $(CFLAG) $+ -o $@
 
-unix_dgram_server.exe: $(UNIX)
-	$(CC) $(CFLAG) $+ examples/unix_dgram_server.c -o $@
+unix_dgram_server.exe: $(UNIX) examples/unix_dgram_server.c
+	$(CC) $(CFLAG) $+ -o $@
 
-unix_dgram_client.exe: $(UNIX)
-	$(CC) $(CFLAG) $+ examples/unix_dgram_client.c -o $@
+unix_dgram_client.exe: $(UNIX) examples/unix_dgram_client.c
+	$(CC) $(CFLAG) $+ -o $@
 
-unix_stream_server.exe: $(UNIX)
-	$(CC) $(CFLAG) $+ examples/unix_stream_server.c -o $@
+unix_stream_server.exe: $(UNIX) examples/unix_stream_server.c
+	$(CC) $(CFLAG) $+ -o $@
 
-unix_stream_client.exe: $(UNIX)
-	$(CC) $(CFLAG) $+ examples/unix_stream_client.c -o $@
+unix_stream_client.exe: $(UNIX) examples/unix_stream_client.c
+	$(CC) $(CFLAG) $+ -o $@
 
 
 clean:
